@@ -1,0 +1,100 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #f7f3f3;
+}
+
+header {
+    background-color: #2c2c2c;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+
+#contact {
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+   
+    background: linear-gradient(to right, #a0867d, #29216d);
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+
+.con{
+    width: 20px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+.hero-content2{
+    display: flex;
+  justify-content: center;
+  gap: 30px;
+    height: 100px;
+}
+.social-media{
+    display: inline;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      cursor: pointer;
+    }
+    .social-media:hover {
+        transform: scale(1.2); /* Makes the icon 20% larger */
+        opacity: 0.8; /* Optional: Slightly fade the icon */
+      }

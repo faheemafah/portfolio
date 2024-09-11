@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The First Portfolio</title>
+   <link rel="stylesheet" href="education.css">
+   
+   <script src="scripts/education.js" defer></script>
+      
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Education</h1>
+    <section class="hero">
+        <div class="Education">
+           
+            <img src="project images/sliate.jpg" alt="SLIATE">
+            <h3>Higher National Diploma in <br>
+                Information Technology
+            </h3>
+            <a href="#" id="seeMoreLink">See more</a>
+
+            <div class="more-details" id="moreDetails">
+                <p><strong>Institution:</strong> Sri Lanka Institute of Advanced Technical Education</p>
+                <p><strong>Duration:</strong> August 2022 to present</p>
+                <p><strong>Relevant Coursework:</strong></p>
+                <ul>
+                    <li>Programming</li>
+                    <li>Project Management</li>
+                    <li>Communication</li>
+                    <li>Presentation Skills</li>
+                    <li>Quality Assurance</li>
+                </ul>
+                <p><strong>Description:</strong></p>
+                <ul>
+                    <li>Attended Sri Lanka Institute of Advanced Technical Education (SLIATE)</li>
+                    <li>Specializing in Information Technology</li>
+                    <li>Proficient in a range of programming languages:
+                        <ol>
+                            <li>Java</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>C#</li>
+                            <li>HTML, CSS, JavaScript</li>
+                        </ol>
+                    </li>
+                    <li>Experience in:
+                        <ol>
+                            <li>Android Studio</li>
+                            <li>Visual Studio</li>
+                            <li>Eclipse</li>
+                            <li>Apache NetBeans</li>
+                        </ol>
+                    </li>
+                    <li>This program provides a strong foundation in IT, focusing on developing skills in programming, project management, and effective communication.</li>
+                    <li>The curriculum includes both theoretical and practical aspects, preparing students for various roles in the IT industry.</li>
+                </ul>
+
+                
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="Education">
+            <img src="project images/orin.jpg" alt="cmphardware">
+            <h3>computer system and Hardware</h3>
+            <a href="See more" id="seeMoreLink1">See more</a>
+            <div class="more-details1" id="moreDetails1">
+               <p><strong>Institution:</strong>Orion campus</p>
+               <p><strong>Duration:</strong>2024-may TO 2024-july</p>
+               <p><strong>Description:</strong>Learn about basic of computer system and Hardware,</p>
+        </div>
+        </div>
+    </section>
+
+</section>
+<section class="hero">
+    <div class="Education">
+        <img src="project images/humanresourse.jpg" alt="cmphardware">
+        <h3>Human Resourcs Management</h3>
+        <a href="See more" id="seeMoreLink2">See more</a>
+        <div class="more-details2" id="moreDetails2">
+           <p><strong>Institution:</strong>Orion campus</p>
+           <p><strong>Duration:</strong>2024-march TO 2024-june</p>
+           <p><strong>Description:</strong>Learn about basic of HR management,</p>
+    </div>
+    </div>
+</section>
+
+<section class="hero">
+    <div class="Education">
+        <img src="project images/azhar1.jpg" alt="A/L">
+        <h3>Advanced Leval</h3>
+        <h2> Subject and Results</h2>
+        <a href="#" id="seeMoreLink3">See more</a>
+        <div class="more-details3" id="moreDetails3">
+            <p><strong>STREAM:</strong> BIO STREAM TECHNOLOGY</p>
+            <table border="1">
+            <tr align="center">
+                <th>Year</th>
+                <th>Bio System Technology</th>  
+                <th>Science For Technology</th>
+                <th>Information Technology</th>               
+                <th>Genaral English</th>
+                <th>Genaral Knowledg</th>
+                <th>Z.Score</th> 
+            </tr>
+            <tr align="center">
+                <td>2020</td>
+                <td>C</td>
+                <td>S</td>
+                <td>S</td>
+                <td>C</td>
+                <td>45</td>
+                <td>0.07</td>
+            </tr>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+
+<script> document.getElementById("seeMoreLink3").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    var moreDetails = document.getElementById("moreDetails3");
+    if (moreDetails.classList.contains("show")) {
+        moreDetails.classList.remove("show");
+        this.textContent = "See more"; // Change link text back to "See more"
+    } else {
+        moreDetails.classList.add("show");
+        this.textContent = "See less"; // Change link text to "See less"
+    }
+});</script>
+
+
+   <section id="function">
+
+   <script> document.getElementById("seeMoreLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    var moreDetails = document.getElementById("moreDetails");
+    if (moreDetails.classList.contains("show")) {
+        moreDetails.classList.remove("show");
+        this.textContent = "See more"; // Change link text back to "See more"
+    } else {
+        moreDetails.classList.add("show");
+        this.textContent = "See less"; // Change link text to "See less"
+    }
+});</script>
+  <script>
+    document.getElementById("seeMoreLink1").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    var moreDetails = document.getElementById("moreDetails1");
+    if (moreDetails.classList.contains("show")) {
+        moreDetails.classList.remove("show");
+        this.textContent = "See more"; // Change link text back to "See more"
+    } else {
+        moreDetails.classList.add("show");
+        this.textContent = "See less"; // Change link text to "See less"
+    }
+});</script>
+<script>
+ document.getElementById("seeMoreLink2").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    var moreDetails = document.getElementById("moreDetails2");
+    if (moreDetails.classList.contains("show")) {
+        moreDetails.classList.remove("show");
+        this.textContent = "See more"; // Change link text back to "See more"
+    } else {
+        moreDetails.classList.add("show");
+        this.textContent = "See less"; // Change link text to "See less"
+    }
+});
+
+
+</script>
+    
+</section>   
+
+
+</body>
+</html>

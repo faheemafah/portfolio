@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The First Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="About.html" id="about-button">About</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="about">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <img src="project images/cartroonIMG.jpg" class="about-image" alt="Faheema's Picture">
+                <div class="about-text">
+                    <p>
+                        Hello, I'm <strong>Faheema</strong>, an Information Technology major at the Sri Lanka Institute of Advanced Technical Education (<strong>SLIATE</strong>). I specialize in <strong>web and mobile application development</strong>, leveraging languages like <strong>Java, JavaScript, HTML, CSS, MySQL, and PHP</strong>.
+                    </p>
+                    <p>
+                        My passion lies in developing functional applications using tools like <strong>Android Studio</strong> and <strong>Visual Studio</strong>. I strive to combine creativity with technical proficiency in every project.
+                    </p>
+                    <button id="read-more-btn" class="btn">Read More</button>
+                    <div id="additional-info" class="additional-info hidden">
+                        <p>
+                            Recently, I've expanded my expertise in AI and machine learning, further enhancing my ability to tackle complex problems. I aim to bring innovation and impact through technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("read-more-btn").addEventListener("click", function() {
+            const additionalInfo = document.getElementById("additional-info");
+            if (additionalInfo.classList.contains("hidden")) {
+                additionalInfo.classList.remove("hidden");
+                this.textContent = "Read Less";
+            } else {
+                additionalInfo.classList.add("hidden");
+                this.textContent = "Read More";
+            }
+        });
+
+        // Dynamic content modification when "About" is clicked
+        document.getElementById("about-button").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const aboutContent = document.getElementById("about-content");
+
+            aboutContent.innerHTML = `
+                <p><strong>Updated About Me Section:</strong><br>
+                I've recently explored new fields like AI and machine learning, enriching my journey at SLIATE with diverse experiences that prepare me for real-world IT challenges.</p>
+            `;
+            aboutContent.style.cssText = "color: blue; font-size: 20px; background-color: #f0f0f0; padding: 20px;"; // Apply styles
+        });
+    </script>
+</body>
+</html>
